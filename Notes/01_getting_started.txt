@@ -1,0 +1,18 @@
+# Setup Development Enviroment
+
+=> install node.js
+
+- node --version (checking node version)
+
+@ npm (node package manager, using npm for download various packages such as angular cli)
+
+- npm install -g @angular/cli (-g flag use for install angular cli globally otherwise it will only install in current folder)
+- ng --version (checking the version of angular cli)
+
+
+# First Angular apps
+
+- ng new hello-world (install first angular apps hello-world)
+- ng serve (Run live development server)
+
+
