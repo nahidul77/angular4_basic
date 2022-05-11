@@ -9,10 +9,27 @@
 - npm install -g @angular/cli (-g flag use for install angular cli globally otherwise it will only install in current folder)
 - ng --version (checking the version of angular cli)
 
-
+---------------------------------------------------------------------------
 # First Angular apps
 
 - ng new hello-world (install first angular apps hello-world)
 - ng serve (Run live development server)
 
+---------------------------------------------------------------------------
+# Structure of Angular Project
+
+@ node_modules (This is where we store all the third party library for the development, we are not going to deploy node_modules. part of this third party library we put in a bundle and deploy in a application)
+
+@ Every application has at least one component and one module.
+
+- src/assets (We will add static files to this folder such as image, text, icon)
+- src/environments (configuaration settings for different Enviroment, so we have one file for production another for development)
+- index.html (insert everything here dynamically)
+- main.ts (starting point of our application, bootstraping the main module which is AppModule, so angular load this module and everything starts from here)
+- polyfills.ts (fill the gap between the feature that js and angular needs also features supported by current browser)
+- styles.css (Global css)
+- editorconfig (make sure all the developer of the team use same config)
+- karma.conf.js (test runner)
+- package.json (every node project have this file, app name, version and dependencies, devdependencies library (angular/cli, karma) for development such as test runner which will not use in production)
+- tsconfig.json (settings for typescript compiler)
 
